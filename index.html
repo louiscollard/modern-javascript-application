@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+		<script defer type="module" src="./src/js/index.js"></script>
+		<link rel="stylesheet" href="./src/css/main.min.css" />
+	</head>
+	<body>
+		<main>
+			<h1>WEATHER</h1>
+			<section class="form">
+				<form>
+					<input type="button" value="SUBMIT" id="button" />
+					<input type="text" placeholder="Search for a city" id="city" />
+					<p class="message"></p>
+				</form>
+			</section>
+			<section class="cities">
+				<div class="city-name-container">
+					<h3 class="city"></h3>
+					<h3 class="country"></h3>
+				</div>
+				<ul>
+					<li class="day-one">
+						<div class="day-one-dayname"></div>
+						<div class="day-one-temp"></div>
+						<div class="day-one-sky"></div>
+					</li>
+					<li class="day-two">
+						<div class="day-two-dayname"></div>
+						<div class="day-two-temp"></div>
+						<div class="day-two-sky"></div>
+					</li>
+					<li class="day-three">
+						<div class="day-three-dayname"></div>
+						<div class="day-three-temp"></div>
+						<div class="day-three-sky"></div>
+					</li>
+					<li class="day-four">
+						<div class="day-four-dayname"></div>
+						<div class="day-four-temp"></div>
+						<div class="day-four-sky"></div>
+					</li>
+					<li class="day-five">
+						<div class="day-five-dayname"></div>
+						<div class="day-five-temp"></div>
+						<div class="day-five-sky"></div>
+					</li>
+				</ul>
+			</section>
+			<canvas aria-label="chart" role="img" id="lineCanvas"></canvas>
+			<footer></footer>
+		</main>
+	</body>
+</html>
