@@ -1,6 +1,7 @@
 "use strict";
 
 import { config } from "./config.js";
+import "../scss/main.scss";
 
 const apiKey = config.API_KEY;
 const btnSubmit = document.getElementById("button");
